@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +6,18 @@
 }
 
 body {
-    background-color: #9742ff;
-    font-family: "Ubuntu", sans-serif;
+    /* background-color: #10061c; */
+    background-image: linear-gradient(45deg, #1d0b34, black);
+    font-family: "Oxanium", sans-serif;
     font-weight: 400;
     font-style: normal;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.navbar{
+   background-color: #360d67;
+   height: 50px;
+   width: 100vw;
+   margin-left: 0px;
 }
 
 nav ul {
@@ -18,11 +26,15 @@ nav ul {
     align-items: center;
     height: 40px;
     margin: 0 22px;
+    padding-top: 10px;
 }
 
 .navbar a {
     text-decoration: none;
     color: white;
+}
+h1{
+    animation: fade 0.5s ease-in-out;
 }
 
 nav li {
@@ -95,6 +107,23 @@ nav li:first-child {
     font-size: x-large;
     color: white;
     padding-top: 150px;
+}
+.about h1{
+    border-right: 5px solid;
+    width: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(8), cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
 }
 
 .footer .btn {
